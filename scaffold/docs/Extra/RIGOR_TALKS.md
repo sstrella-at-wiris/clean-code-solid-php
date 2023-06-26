@@ -173,7 +173,7 @@ Instead of using the parent `Invoice` class, we use our children `InvoiceTestCla
 
 Like this, we will not need to depend on the db connection to test the `isTaxGreaterThanZero` method functionality, our business logic.
 
-# Immutability
+### Immutability
 The immutability principle states that once an object is created, its state should not be modified, ensuring that it remains constant and unchangeable throughout its lifetime.
 
 To achieve this immutability, we are making the age property private and providing a single method `setAge()` to set the initial age. 
