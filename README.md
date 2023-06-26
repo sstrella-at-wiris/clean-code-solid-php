@@ -29,12 +29,12 @@ Moreover, this [document](scaffold/docs/ISSUE_REPORTING.md) provides insights on
 
 ## Sources & bibliography
 
-"Clean Code: A Handbook of Agile Software Craftsmanship" by Robert "Uncle Bob" Martin
-https://www.youtube.com/playlist?list=PLfgj7DYkKH3Cd8bdu5SIHGYXh_bPV2idP
-https://levelup.gitconnected.com/solid-principles-simplified-php-examples-based-dc6b4f8861f6
-https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/
-https://latteandcode.medium.com/php-y-principios-solid-86c77d56e90
-https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29
-https://dzone.com/articles/clean-code-summary-and-key-points
-https://github.com/piotrplenik/clean-code-php
-https://dev.to/evrtrabajo/solid-in-php-d8e
+- "Clean Code: A Handbook of Agile Software Craftsmanship" by Robert "Uncle Bob" Martin
+- https://www.youtube.com/playlist?list=PLfgj7DYkKH3Cd8bdu5SIHGYXh_bPV2idP
+- https://levelup.gitconnected.com/solid-principles-simplified-php-examples-based-dc6b4f8861f6
+- https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/
+- https://latteandcode.medium.com/php-y-principios-solid-86c77d56e90
+- https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29
+- https://dzone.com/articles/clean-code-summary-and-key-points
+- https://github.com/piotrplenik/clean-code-php
+- https://dev.to/evrtrabajo/solid-in-php-d8e
