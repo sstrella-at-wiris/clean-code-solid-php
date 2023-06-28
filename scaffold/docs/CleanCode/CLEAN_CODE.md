@@ -236,29 +236,32 @@ A few things to consider:
 
 		// Bad Example
 		function calculateOrderTotal($orderItems, $shippingMethod) {
-		$subtotal = 0;
-		foreach ($orderItems as $item) {
-		    $subtotal += $item['price'] * $item['quantity'];
-		}
-		$tax = calculateTax($subtotal);
-		$shipping = calculateShippingCost($shippingMethod);
-		return $subtotal + $tax + $shipping;
+			$subtotal = 0;
+			foreach ($orderItems as $item) {
+				$subtotal += $item['price'] * $item['quantity'];
+			}
+			$tax = calculateTax($subtotal);
+			$shipping = calculateShippingCost($shippingMethod);
+
+			return $subtotal + $tax + $shipping;
 		}
 		
 		// Good Example
 		function calculateOrderSubtotal($orderItems) {
-		$subtotal = 0;
-		foreach ($orderItems as $item) {
-		    $subtotal += $item['price'] * $item['quantity'];
-		}
-		return $subtotal;
+			$subtotal = 0;
+			foreach ($orderItems as $item) {
+		    		$subtotal += $item['price'] * $item['quantity'];
+			}
+
+			return $subtotal;
 		}
 		
 		function calculateOrderTotal($orderItems, $shippingMethod) {
-		$subtotal = calculateOrderSubtotal($orderItems);
-		$tax = calculateTax($subtotal);
-		$shipping = calculateShippingCost($shippingMethod);
-		return $subtotal + $tax + $shipping;
+			$subtotal = calculateOrderSubtotal($orderItems);
+			$tax = calculateTax($subtotal);
+			$shipping = calculateShippingCost($shippingMethod);
+
+			return $subtotal + $tax + $shipping;
 		}
 
 ### Do One Thing
