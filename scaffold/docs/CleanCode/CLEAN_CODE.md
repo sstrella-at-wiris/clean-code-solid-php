@@ -234,32 +234,32 @@ A few things to consider:
 - The nested structures (blocks) should be one or two at maximum.
 
 
-    // Bad Example
-    function calculateOrderTotal($orderItems, $shippingMethod) {
-        $subtotal = 0;
-        foreach ($orderItems as $item) {
-            $subtotal += $item['price'] * $item['quantity'];
-        }
-        $tax = calculateTax($subtotal);
-        $shipping = calculateShippingCost($shippingMethod);
-        return $subtotal + $tax + $shipping;
-    }
-
-    // Good Example
-    function calculateOrderSubtotal($orderItems) {
-        $subtotal = 0;
-        foreach ($orderItems as $item) {
-            $subtotal += $item['price'] * $item['quantity'];
-        }
-        return $subtotal;
-    }
-    
-    function calculateOrderTotal($orderItems, $shippingMethod) {
-        $subtotal = calculateOrderSubtotal($orderItems);
-        $tax = calculateTax($subtotal);
-        $shipping = calculateShippingCost($shippingMethod);
-        return $subtotal + $tax + $shipping;
-    }
+		// Bad Example
+		function calculateOrderTotal($orderItems, $shippingMethod) {
+		$subtotal = 0;
+		foreach ($orderItems as $item) {
+		    $subtotal += $item['price'] * $item['quantity'];
+		}
+		$tax = calculateTax($subtotal);
+		$shipping = calculateShippingCost($shippingMethod);
+		return $subtotal + $tax + $shipping;
+		}
+		
+		// Good Example
+		function calculateOrderSubtotal($orderItems) {
+		$subtotal = 0;
+		foreach ($orderItems as $item) {
+		    $subtotal += $item['price'] * $item['quantity'];
+		}
+		return $subtotal;
+		}
+		
+		function calculateOrderTotal($orderItems, $shippingMethod) {
+		$subtotal = calculateOrderSubtotal($orderItems);
+		$tax = calculateTax($subtotal);
+		$shipping = calculateShippingCost($shippingMethod);
+		return $subtotal + $tax + $shipping;
+		}
 
 ### Do One Thing
 Functions should do one thing and do it well, with a clear purpose and minimal side effects..
